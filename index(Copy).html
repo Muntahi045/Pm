@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <script>
+        window.addEventListener('mouseup' , function (event){
+            var box = document.getElementById('menu');
+            if(event.target != box){
+                box.style.width = '0px';
+            }
+        })
+    </script>
+    <div id="im">
+        <div style="color: white;" id="mainbox" onclick="openFunction()">&#9776;</div>
+    </div>
+    <div id="menu" class="sidemenu">
+        <center>
+            <img class="imge1" src="loig5.png" width=100px height=100px>
+        </center><br><hr><br>
+        <a href="http://muntahi.42web.io/" id="active">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Application contents</a>
+        <a href="#">Feedback</a>
+        <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+        <br>
+        <div class="sosh">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i id="oo"  class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <center>
+        <img class="loig5" src="loig5.png">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+    </center>
+<style>
+    /* img introduction */
+    .loig5 {
+        width: 360px;
+        height: 370px;
+    }
+
+    /* imge1 */
+    .imge1 {
+        margin: -40px 0px 0px 0px;
+        border-radius: 60px;
+    }
+
+    /* sochal */
+    .sosh {
+        display: flex;
+    }
+
+    /**/
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .th {
+        color: white;
+        font-size: 20px;
+        text-shadow: 8px 8px 10px green;
+    }
+
+    #im {
+        margin: -10px 0px 0px 0px;
+        background-color: #000033;
+        display: flex;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #00001a;
+    }
+
+    #menu {
+        transition: 0.6s;
+    }
+
+    #mainbox {
+        background-color: #000033;
+    }
+
+    .sidemenu {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: #000033;
+        z-index: 1;
+        padding-top: 100px;
+        overflow: hidden;
+        transition: all 0.6s;
+    }
+
+    .sidemenu a {
+        padding: 8px;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: all 0.6s ease;
+    }
+
+    .sidemenu a:hover {
+        transition: all 0.6s ease;
+        color: blue;
+        background-color: black;
+    }
+
+    .sidemenu .closebtn {
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 30px;
+        margin-left: 32px;
+    }
+
+    #mainbox {
+        width: 100px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 8px;
+        color: green;
+        font-size: 30px;
+        padding: 4px;
+        outline: none;
+    }
+
+    #active {
+        color: white;
+        background-color: none;
+    }
+</style>
+
+</body>
+</html>
